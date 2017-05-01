@@ -1,6 +1,6 @@
 {
   "name": "@criticalmanufacturing/training-simulator-erp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Critical Manufacturing Training ERP Simulator",
   "main": "src/index.js",
   "bin": {

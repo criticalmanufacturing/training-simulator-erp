@@ -14,7 +14,7 @@ To see the list of available APIs please check the [API Index](./docs/INDEX.MD).
 To start just run:
 
 ```
-npm install @criticalmanufacturing/training-erp-simulator -g
+npm install @criticalmanufacturing/training-simulator-erp -g
 ```
 
 and then:
