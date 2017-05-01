@@ -32,8 +32,8 @@ export function getAll(req: restify.Request, res: restify.Response, next: restif
 
 export function getById(req: restify.Request, res: restify.Response, next: restify.Next) {
 
-    if (req.params.id == null) {
-        throw new Error("Missing id parameter");
+    if (!req.params.id) {
+        return next(new restify.InvalidArgumentError("Id"));
     }
 
     let id = parseInt(req.params.id);
@@ -42,7 +42,7 @@ export function getById(req: restify.Request, res: restify.Response, next: resti
     let po = pos.find((po) => po.id === id);
 
     if (!po) {
-        throw new Error(`Production Order with Id ${id} was not found in the system`);
+        return next(new restify.NotFoundError(`Production Order with Id ${id} was not found in the system`));
     }
 
     res.send(po);

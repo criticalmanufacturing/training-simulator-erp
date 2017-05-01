@@ -31,8 +31,8 @@ cmf-simulator-erp --port 80
 
 For more details use the ```--help``` option.
 
-[travis-image]: https://www.travis-ci.org/criticalmanufacturing/training-erp-simulator.svg?branch=master
-[travis-url]: https://www.travis-ci.org/criticalmanufacturing/training-erp-simulator
+[travis-image]: https://www.travis-ci.org/criticalmanufacturing/training-simulator-erp.svg?branch=master
+[travis-url]: https://www.travis-ci.org/criticalmanufacturing/training-simulator-erp
 
-[coveralls-image]: https://coveralls.io/repos/github/criticalmanufacturing/training-erp-simulator/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/github/criticalmanufacturing/training-erp-simulator?branch=master
+[coveralls-image]: https://coveralls.io/repos/github/criticalmanufacturing/training-simulator-erp/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/criticalmanufacturing/training-simulator-erp?branch=master
