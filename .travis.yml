@@ -1,0 +1,15 @@
+sudo: false
+language: node_js
+node_js:
+- node
+after_success:
+- npm run coveralls
+deploy:
+  provider: npm
+  email: sobreiro.pedro@gmail.com
+  skip_cleanup: true
+  api_key:
+    secure: epHg2uijCV1Hr5g3eK6usS7HsP+tI2ppoVIUGECpTVhfAoxI6NFCq7F4IYEusiRpcIYgRI7w4jAQn/wun096sqzyl1KtcLXuGAiHzzj8HUGbCs/LAj8TxnajABrrIaL4ybFzvS7eFGgJG/Y+RG7OYmYjR8Wl1f5jZokJZzf3n8dQARIW45aw+KnCdYGcDXP0KN/m1OtMbk4e/JK7kpJhELgKuXurJV6YcARZGFGb3cMWtUX7+BctzvlVrj6VXV1M2N66Myv8xxtYCgtMES1Ouh7McJiy7m6xRa7TsdHDZPVJaaTYdDAXM8AtawmLZwEK/n+Llh0Ujkrpe77NBrg+7MHZGzOWSFlkIfu0wDaZE0bbnOx1fl8sG3xbriJ0di82bX70wkfbOTlLp3q0aNkRZ7Gs+ZHRa6NYIOveXAYt/2jqLgOtBhF+G4jA/ZGYbthTGd9FgRldVo/zzxzLEySL4yB1dSf1R9xY9ux8bky3nyU7beg4UNINw5zBgWk2WQdpjQV5vdszCMy4drXg6JfHCC+VJmwAZWdaI9qGg6TObzmFVuhzj+RiXjV2v9jIKa63gLI1UZUvK47jA1mTX5qX83EiooQy5fwnwevwqxpPHIJXH7Gyw0ReXGgcoLLnwag9iuoUOrIxZ/0FBPAgzRpOb1RPdweyOCX0sc8POSpznUY=
+  on:
+    tags: true
+    repo: criticalmanufacturing/training-simulator-erp
